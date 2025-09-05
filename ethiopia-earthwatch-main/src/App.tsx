@@ -16,7 +16,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}> {/* <-- Add basename */}
         <div className="min-h-screen bg-gradient-hero">
           <Navigation />
           <Routes>
